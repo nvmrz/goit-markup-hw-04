@@ -6,7 +6,9 @@ html{
 *::after{
     box-sizing: inherit;
 }
-
+:focus{
+    border: 0.25px solid var(--active-color); outline: none;
+}
 :root{
     --main-color: #212121;
     --secondary-color: #757575;
@@ -265,7 +267,7 @@ body{
 
 .section-title{
     
-    font-weight: 900;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.36;
     text-align: center;
@@ -290,7 +292,7 @@ body{
 
 
 .section-description{
-    font-weight: 500;
+    font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     color:var(--secondary-color);
@@ -382,6 +384,13 @@ body{
     fill: #ffffff;
 }
 
+.social-box:focus{
+    background-color: var(--active-color);
+    fill: #ffffff;
+    outline: none;
+    border: none;
+}
+
 
 /* clients */
 .clients-main{
@@ -390,24 +399,35 @@ body{
 }
 
 
-.client{
+
+
+.a-test{
+    display: inline-flex;
     fill: var(--icon-main-color);
     border: 1px solid #AFB1B8;
     box-sizing: border-box;
     border-radius: 4px;
     padding: 20px 45px;
     margin-right: 30px;
-    width: 170px;
+    min-width: 170px;
     height: 90px;
-}
-
-
-
-.client:hover{
-    fill: var(--active-color);
-    border: 1px solid var(--active-color);
     
 }
+
+.client{
+    margin-right: auto;
+    margin-left: auto;   
+}
+
+
+
+.a-test:hover,
+.a-test:focus{
+    fill: var(--active-color);
+    border: 1px solid var(--active-color);
+}
+
+
 
 /* footer */
 
@@ -483,7 +503,8 @@ body{
     background-color: var(--footer-icons-bg);
 }
 
-.social-footer:hover{
+.social-footer:hover,
+.social-footer:focus{
     margin-left: auto;
     margin-right: auto;
     background-color: var(--active-color);

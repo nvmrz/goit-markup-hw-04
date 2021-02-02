@@ -7,6 +7,7 @@ h3{
 }
 
 /* filer button */
+
 .portfolio-list{
     display: flex;
     margin-top: 0px;
@@ -50,7 +51,7 @@ h3{
 }
 .portfolio-title{
     font-style: normal;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
@@ -61,13 +62,13 @@ h3{
 
 }
 .portfolio-tipes{
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
     color: var(--main-color);
     background-color: #F5F4FA;
-}
+} 
 
 
 .portfolio-tipes:hover,
@@ -89,21 +90,26 @@ h3{
     margin-top: 0px;
     margin-bottom: 0px;
 }
+.portfolio-td{
+    padding: 20px 24px;
+}
+
 
 .portfolio-items{
+    display: flex;
     margin-bottom: 30px;
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
-}
+} 
 
-.portfolio-items:hover{
+.portfolio-box:focus,
+.portfolio-box:hover{
     border: 1px solid #EEEEEE;
-    box-sizing: border-box;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
                 0px 4px 4px rgba(0, 0, 0, 0.06), 
                 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-td{
-    padding: 20px 24px;
-}
+
+
+
